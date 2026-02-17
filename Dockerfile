@@ -36,9 +36,9 @@ ENV MAX_REQUEST_PER_MINUTE=60
 ENV AUTH_CODE=""
 ENV DATABASE_URL="file:../data/wewe-rss.db"
 ENV DATABASE_TYPE="sqlite"
+ENV FEED_MODE=fulltext
 
 RUN chmod +x ./docker-bootstrap.sh
-
 CMD ["./docker-bootstrap.sh"]
 
 
